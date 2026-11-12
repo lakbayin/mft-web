@@ -1,0 +1,13 @@
+.photo-reaction:disabled,
+.profile-reaction:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+  background: #f3ece4;
+  color: #816a60;
+}
+
+.photo-reaction:disabled:hover,
+.profile-reaction:disabled:hover {
+  background: #f3ece4;
+  color: #816a60;
+}

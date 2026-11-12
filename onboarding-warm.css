@@ -1,0 +1,59 @@
+.onboarding-visual {
+  background: linear-gradient(145deg, #ffe39b, #f9c76b);
+}
+
+.onboarding-visual.visual-1 {
+  background: linear-gradient(145deg, #c6f0c9, #8fd8aa);
+}
+
+.onboarding-visual.visual-2 {
+  background: linear-gradient(145deg, #ffd6c8, #f3a989);
+}
+
+.island-note {
+  position: absolute;
+  bottom: 28px;
+  z-index: 2;
+  padding: 9px 13px;
+  border: 1px solid rgba(78, 52, 42, .45);
+  border-radius: 999px;
+  background: rgba(255, 254, 249, .82);
+  color: var(--brown);
+  font-size: 9px;
+  letter-spacing: .04em;
+}
+
+.business-carousel { z-index: 2; width: 100%; overflow: hidden; padding: 14px 0 24px; }
+.business-track { display: flex; width: max-content; gap: 14px; animation: card-scroll 22s linear infinite; }
+.business-group { display: flex; gap: 14px; }
+.business-slide {
+  width: 176px;
+  min-height: 245px;
+  padding: 22px;
+  border: 2px solid var(--brown);
+  border-radius: 20px;
+  background: #fffef9;
+  box-shadow: 8px 8px 0 var(--brown);
+}
+
+.business-icon { display: block; margin-bottom: 24px; font-size: 40px; }
+.business-slide p { margin: 0 0 8px; color: var(--orange); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
+.business-slide h2 { margin: 0 0 20px; font: 800 24px/1 "Bricolage Grotesque"; letter-spacing: -.04em; }
+.business-slide b { font-size: 10px; color: #765f55; }
+
+@keyframes card-scroll { to { transform: translateX(calc(-50% - 7px)); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .business-track { animation-play-state: paused; }
+}
+
+.onboarding-progress button { width: 11px; height: 11px; padding: 0; border: 1px solid var(--brown); border-radius: 999px; background: #fff; cursor: pointer; transition: width .2s ease, background .2s ease; }
+.onboarding-progress button.active { width: 30px; background: var(--orange); }
+.onboarding-progress button:focus-visible { outline: 3px solid #225031; outline-offset: 3px; }
+.onboarding-actions { align-items: stretch; flex-wrap: wrap; }
+.guest-link { display: inline-flex; align-items: center; justify-content: center; padding: 12px 15px; border: 2px solid var(--brown); border-radius: 11px; background: #fffef9; box-shadow: 3px 3px 0 var(--brown); color: var(--brown); line-height: 1.35; text-align: center; text-decoration: none; }
+.signin-link { display: inline-flex; align-items: center; justify-content: center; padding: 12px 15px; border: 2px solid var(--brown); border-radius: 11px; background: var(--peach); box-shadow: 3px 3px 0 var(--brown); color: var(--brown); font-size: 9px; font-weight: 800; line-height: 1.35; text-align: center; text-decoration: none; }
+.signin-link:hover { background: var(--yellow); }
+.signin-link:focus-visible { outline: 3px solid #225031; outline-offset: 3px; }
+.guest-link:hover { background: var(--peach); }
+.guest-link:focus-visible { outline: 3px solid #225031; outline-offset: 3px; }
